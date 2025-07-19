@@ -14,26 +14,65 @@
       overflow-x: hidden;
     }
 
+.decorative-img {
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 600px; /* tamaño grande, ajusta si quieres */
+  opacity: 0.15; /* más sutil para que no interfiera */
+  pointer-events: none;
+  z-index: 0;
+}
+
+
+
     header {
-      background: linear-gradient(135deg, #fbc02d, #f57c00);
-      padding: 40px 20px;
-      text-align: center;
-      border-radius: 0 0 40px 40px;
-      animation: pop 1s ease-out;
-    }
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    background: linear-gradient(135deg, #fbc02d, #f57c00);
+    padding: 30px 20px;
+    border-radius: 0 0 40px 40px;
+    animation: pop 1s ease-out;
+    text-align: center;
+  }
 
-    header h1 {
-      font-size: 3rem;
-      color: #ffffff;
-      text-shadow: 2px 2px #ffcc80;
-      margin: 0;
-    }
+  .header-content {
+    flex: 1;
+    min-width: 250px;
+    max-width: 600px;
+  }
 
-    header p {
-      font-size: 1.2rem;
-      color: #ffffff;
-      margin: 5px 0;
-    }
+  .header-content h1 {
+    font-size: 3rem;
+    color: #ffffff;
+    text-shadow: 2px 2px #ffcc80;
+    margin: 0 0 10px;
+  }
+
+  .header-content p {
+    color: white;
+    margin: 5px 0;
+    font-size: 1.2rem;
+  }
+
+  .header-img img {
+    width: 90px;
+    height: auto;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+  }
+
+  .header-img img:hover {
+    transform: scale(1.1) rotate(3deg);
+  }
+
+  .header-img.left {
+    order: -1;
+  }
 
     section {
       background: #ffffffdd;
@@ -177,16 +216,42 @@ footer p {
   </style>
 </head>
 <body>
-  <header>
+<header>
+  <div class="header-img left">
+    <img src="./assets/padep.jpg" alt="padep">
+  </div>
+  <div class="header-content">
     <h1>Guía Digital Interactiva</h1>
     <p><strong>Autor:</strong> Luisa Marleny Fuentes Velázquez</p>
     <p><strong>Nivel educativo:</strong> Preprimaria - Ciclo 2 (5-6 años)</p>
     <p><strong>Fecha:</strong> Julio 2025</p>
-  </header>
-
+  </div>
+  <div class="header-img right">
+    <img src="./assets/usac.jpg" alt="usac">
+  </div>
+</header>
   <section>
     <h2>Introducción</h2>
     <p>Esta guía digital fue creada con el objetivo de enriquecer el aprendizaje de niños y niñas en etapa preescolar mediante el uso de herramientas digitales innovadoras, divertidas y accesibles. Cada recurso está pensado para potenciar la creatividad, participación y comprensión de los más pequeños.</p>
+  </section>
+
+  <section>
+    <h2>Categorías de Herramientas Digitales</h2>
+    <div class="category-box">1. Gamificación</div>
+    <div class="category-box">2. Creación de Blogs</div>
+    <div class="category-box">3. Inclusión</div>
+    <div class="category-box">4. Animación y Videos</div>
+    <div class="category-box">5. Presentaciones</div>
+    <div class="category-box">6. Editores de Video</div>
+    <div class="category-box">7. Editores de Imagen</div>
+    <div class="category-box">8. Editores de Audio</div>
+    <div class="category-box">9. Pizarras Digitales</div>
+    <div class="category-box">10. Contenido Educativo</div>
+    <div class="category-box">11. Evaluación Automatizada</div>
+    <div class="category-box">12. Matemáticas</div>
+    <div class="category-box">13. Comunicación y Lenguaje</div>
+    <div class="category-box">14. Realidad Aumentada</div>
+    <div class="category-box">15. Realidad Virtual</div>
   </section>
 
   <section>
@@ -267,6 +332,38 @@ footer p {
     </table>
   </section>
 
+  <section>
+  <h2>Momento de Aplicación en la Clase</h2>
+    <li>Inicio
+        <p>Al inicio, sirve como “activador de conocimientos previos” con preguntas motivadoras.Al cierre, permite evaluar aprendizajes de forma lúdica, fomentando el repaso y la retroalimentación inmediata.</p>
+    </li>
+    <li>Cierre
+        <p>Al cierre, permite evaluar aprendizajes de forma lúdica, fomentando el repaso y la retroalimentación inmediata.</p>
+    </li>
+
+</section>
+
+<section>
+  <h2>Instrucciones de Aplicación en el Aula</h2>
+  <ol>
+            <li>Contar con un dispositivo con acceso a internet.</li>
+            <li>Iniciar sesión.</li>
+            <li>Haz clic en el botón “Crear” y selecciona el tipo de actividad.</li>
+            <li>Añade tus preguntas, respuestas, imágenes o videos. Marca la opción correcta.</li>
+            <li>Configura el tiempo de respuesta, puntos y diseño.</li>
+            <li>Guarda tu Kahoot y elige si lo usarás en vivo o lo asignarás como tarea</li>
+</section>
+
+<section>
+  <h2> Referencias Bibliográficas</h2>
+  <ul>
+  <li><strong>Kahoot!</strong><br>
+Machaca-Huamanhorcco, E. (2022). Aplicación de Kahoot como herramienta educativa para la enseñanza. <em>Educación, 31</em>(61). <a href="http://www.scielo.org.pe/scielo.php?script=sci_arttext&pid=S1019-94032022000200116" target="_blank">http://www.scielo.org.pe/scielo.php?script=sci_arttext&pid=S1019-94032022000200116</a>
+</li>
+
+  </ul>
+</section>
+
     <section>
     <h2> Edublogs</h2>
     <table>
@@ -343,6 +440,38 @@ footer p {
     </table>
   </section>
 
+  <section>
+  <h2>Momento de Aplicación en la Clase</h2>
+    <li>Desarrollo
+        <p>Ideal para documentar procesos, reflexionar durante el aprendizaje, publicar tareas o mantener un portafolio digital activo.</p>
+    </li>
+
+</section>
+
+<section>
+  <h2>Instrucciones de Aplicación en el Aula</h2>
+  <ol>
+            <li>Contar con un dispositivo con acceso a internet.</li>
+            <li>Iniciar sesión.</li>
+            <li>Elige un nombre de usuario y dirección para tu blog, por ejemplo: mi-clase.edublogs.org.</li>
+            <li>Accede al panel de control (Dashboard) para gestionar tu contenido.</li>
+            <li>Publica tu primera entrada desde la sección “Posts > Add New”.</li>
+            <li>Crea páginas fijas como “Acerca de” o “Contacto” desde “Pages > Add New”</li>
+            <li>Personaliza el diseño de tu blog desde “Appearance > Customize”</li>
+            <li>Comparte el enlace de tu blog con tus estudiantes y familias.</li>
+</section>
+
+<section>
+  <h2> Referencias Bibliográficas</h2>
+  <ul>
+<li><strong>Edublogs</strong><br>
+Edublogs. (s.f.). <em>Getting Started with Edublogs</em>. 
+<a href="https://help.edublogs.org/getting-started-with-edublogs/" target="_blank">https://help.edublogs.org/getting-started-with-edublogs/</a>
+</li>
+
+  </ul>
+</section>
+
     <section>
     <h2>Genially</h2>
     <table>
@@ -418,6 +547,41 @@ footer p {
   </section>
 
     <section>
+  <h2>Momento de Aplicación en la Clase</h2>
+    <li>Desarrollo o cierre
+        <p>En el desarrollo, se usa para presentar contenidos de forma visual e interactiva, favoreciendo la atención y la comprensión.</p>
+        <p>En el cierre, se puede utilizar como herramienta de gamificación o exposición creativa de proyectos realizados.</p>
+    </li>
+
+</section>
+
+<section>
+  <h2>Instrucciones de Aplicación en el Aula</h2>
+  <ol>
+            <li>Contar con un dispositivo con acceso a internet.</li>
+            <li>Iniciar sesión.</li>
+            <li>Elige un nombre de usuario y dirección para tu blog, por ejemplo: mi-clase.edublogs.org.</li>
+            <li>Accede al panel de control (Dashboard) para gestionar tu contenido.</li>
+            <li>Publica tu primera entrada desde la sección “Posts > Add New”.</li>
+            <li>Crea páginas fijas como “Acerca de” o “Contacto” desde “Pages > Add New”</li>
+            <li>Personaliza el diseño de tu blog desde “Appearance > Customize”</li>
+            <li>Comparte el enlace de tu blog con tus estudiantes y familias.</li>
+</section>
+
+<section>
+  <h2> Referencias Bibliográficas</h2>
+  <ul>
+
+   <li><strong>Genially – Buenas prácticas docentes</strong><br>
+    Digital U. (2024, 24 octubre). <em>Genially: Revoluciona tus clases con la creatividad digital</em>. 
+    <a href="https://docenciabuenaspracticas.uc3m.es/2024/10/24/genially-revoluciona-tus-clases-con-la-creatividad-digital/" target="_blank">https://docenciabuenaspracticas.uc3m.es/2024/10/24/genially-revoluciona-tus-clases-con-la-creatividad-digital/</a>
+  </li>
+
+
+  </ul>
+</section>
+
+    <section>
     <h2>Educaplay</h2>
     <table>
       <tr>
@@ -489,6 +653,37 @@ footer p {
     </table>
   </section>
 
+      <section>
+  <h2>Momento de Aplicación en la Clase</h2>
+    <li>Desarrollo
+        <p>Permite reforzar conceptos a través de actividades interactivas como crucigramas, sopas de letras o adivinanzas.</p>
+        <p>Estimula la participación mientras se trabaja el contenido, fortaleciendo competencias básicas.</p>
+    </li>
+
+</section>
+
+<section>
+  <h2>Instrucciones de Aplicación en el Aula</h2>
+  <ol>
+            <li>Contar con un dispositivo con acceso a internet.</li>
+            <li>Iniciar sesión.</li>
+            li>Una vez dentro, selecciona “Crear actividad” y elige el tipo que deseas (sopa de letras, crucigrama, adivinanza, etc.).</li>
+            <li>Completa los datos básicos: título, idioma, curso, asignatura y área de conocimiento.</li>
+            <li>Configura la actividad</li>
+            <li>Publica y comparte mediante enlace o QR</li>
+</section>
+
+<section>
+  <h2> Referencias Bibliográficas</h2>
+  <ul>
+
+     <li><strong>Educaplay – Artículo académico</strong><br>
+    Jurado Enríquez, E. L. (2022). <em>Educaplay. Un recurso educativo de valor para favorecer el aprendizaje en la Educación Superior</em>. Revista Cubana de Educación Superior, 41(2). 
+    <a href="http://scielo.sld.cu/scielo.php?script=sci_arttext&pid=S0257-43142022000200012" target="_blank">http://scielo.sld.cu/scielo.php?script=sci_arttext&pid=S0257-43142022000200012</a>
+  </li>
+  </ul>
+</section>
+
     <section>
     <h2>Voki</h2>
     <table>
@@ -559,8 +754,47 @@ footer p {
       </tr>
     </table>
   </section>
+
+        <section>
+  <h2>Momento de Aplicación en la Clase</h2>
+    <li>Inicio
+        <p>Perfecto para iniciar la clase con un personaje animado que dé la bienvenida, presente el tema o formule una pregunta curiosa.</p>
+        <p>Crea un ambiente cálido, empático y participativo desde el inicio, ideal para niños de preprimaria.</p>
+    </li>
+
+</section>
+
+<section>
+  <h2>Instrucciones de Aplicación en el Aula</h2>
+  <ol>
+            <li>Contar con un dispositivo con acceso a internet.</li>
+            <li>Iniciar sesión.</li>
+            <li>Personaliza tu personaje</li>
+            <li>Agrega voz al avatar</li>
+            <li>Guarda y publica</li>
+</section>
+
+<section>
+  <h2> Referencias Bibliográficas</h2>
+  <ul>
+
+ <li><strong>Voki – Sitio oficial</strong><br>
+    Voki. (s.f.). <em>Create speaking avatars</em>. 
+    <a href="https://www.voki.com" target="_blank">https://www.voki.com</a>
+  </li>
+
+
+
+
+
+
+  </ul>
+</section>
+
     <footer>
       <p>© Luisa Marleny Fuentes Velázquez 2025. Todos los derechos reservados.</p>
     </footer>
+    <img src="https://i.pinimg.com/originals/d6/95/31/d695313d53d7ae5a87ab0e6ad575318e.png" alt="decoración" class="decorative-img" />
+
 </body>
 </html>
