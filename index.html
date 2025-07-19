@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Guía Digital Interactiva</title>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Fredoka One', cursive;
+      background: linear-gradient(to bottom, #fff8e1, #ffe0b2);
+      color: #3e2723;
+      overflow-x: hidden;
+    }
+
+    header {
+      background: linear-gradient(135deg, #fbc02d, #f57c00);
+      padding: 40px 20px;
+      text-align: center;
+      border-radius: 0 0 40px 40px;
+      animation: pop 1s ease-out;
+    }
+
+    header h1 {
+      font-size: 3rem;
+      color: #ffffff;
+      text-shadow: 2px 2px #ffcc80;
+      margin: 0;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      color: #ffffff;
+      margin: 5px 0;
+    }
+
+    section {
+      background: #ffffffdd;
+      margin: 30px auto;
+      border-radius: 25px;
+      padding: 30px;
+      width: 90%;
+      max-width: 1000px;
+      box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+      animation: fadeInUp 1s ease;
+      transition: transform 0.3s;
+    }
+
+    section:hover {
+      transform: scale(1.01);
+    }
+
+    h2 {
+      color: #ff5722;
+      font-size: 2rem;
+      border-bottom: 3px dotted #ff9800;
+      padding-bottom: 5px;
+    }
+
+    p, li {
+      font-size: 1.2rem;
+      line-height: 1.6;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    .category-box {
+      background: #ffecb3;
+      border-left: 8px solid #ffb300;
+      padding: 15px;
+      margin-bottom: 10px;
+      border-radius: 10px;
+      transition: background-color 0.3s ease;
+    }
+
+    .category-box:hover {
+      background-color: #ffe082;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 1rem;
+      font-size: 1.1rem;
+    }
+
+    th, td {
+      border: 1px solid #d7ccc8;
+      padding: 12px;
+      text-align: left;
+      vertical-align: top;
+    }
+
+    th {
+      background-color: #ffe082;
+      color: #5d4037;
+    }
+
+    tr:hover {
+      background-color: #fff8e1;
+    }
+
+    a {
+      color: #0288d1;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    img {
+    width: 120px;
+    height: auto;
+    margin-right: 10px;
+    transition: transform 0.3s ease, filter 0.3s ease;
+    vertical-align: middle;
+  }
+
+  img:hover {
+    transform: scale(1.1) rotate(5deg);
+    filter: brightness(1.1);
+  }
+
+ .button {
+  display: inline-flex;
+  align-items: center;
+  background-color: #fdd835;
+  border: 2px solid #fbc02d;
+  border-radius: 12px;
+  padding: 4px 10px; 
+  font-size: 0.9rem;
+  text-decoration: none;
+  color: #5d4037;
+  font-weight: bold;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.button:hover {
+  background-color: #fff176;
+  transform: scale(1.05);
+}
+
+footer {
+  background: linear-gradient(to right, #ffcc80, #ffb74d);
+  padding: 20px;
+  text-align: center;
+  font-size: 1rem;
+  color: #5d4037;
+  border-top-left-radius: 40px;
+  border-top-right-radius: 40px;
+  box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.1);
+  animation: fadeInUp 1s ease;
+  margin-top: 50px;
+}
+
+footer p {
+  margin: 0;
+  font-weight: bold;
+  text-shadow: 1px 1px #ffe0b2;
+}
+
+
+
+    @keyframes pop {
+      from { transform: scale(0.8); opacity: 0; }
+      to { transform: scale(1); opacity: 1; }
+    }
+
+    @keyframes fadeInUp {
+      from { transform: translateY(20px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Guía Digital Interactiva</h1>
+    <p><strong>Autor:</strong> Luisa Marleny Fuentes Velázquez</p>
+    <p><strong>Nivel educativo:</strong> Preprimaria - Ciclo 2 (5-6 años)</p>
+    <p><strong>Fecha:</strong> Julio 2025</p>
+  </header>
+
+  <section>
+    <h2>Introducción</h2>
+    <p>Esta guía digital fue creada con el objetivo de enriquecer el aprendizaje de niños y niñas en etapa preescolar mediante el uso de herramientas digitales innovadoras, divertidas y accesibles. Cada recurso está pensado para potenciar la creatividad, participación y comprensión de los más pequeños.</p>
+  </section>
+
+  <section>
+    <h2>Herramientas Digitales</h2>
+  </section>
+
+
+  <section>
+    <h2> Kahoot!</h2>
+    <table>
+      <tr>
+        <th>Nombre del recurso</th>
+        <td>Kahoot!</td>
+      </tr>
+      <tr>
+        <th>Código QR y logo</th>
+        <td><em><img src="https://crystalpng.com/wp-content/uploads/2023/05/Kahoot-Logo-png.png" alt="kahoot"></em><img src="./assets/qrcode_kahoot.com.png" alt="qr"></td>
+      </tr>
+      <tr>
+        <th>Descripción detallada</th>
+        <td>Kahoot! es una herramienta digital que convierte el aprendizaje en un juego de preguntas en tiempo real. Los usuarios se conectan con un código desde sus dispositivos y compiten respondiendo cuestionarios creados por el moderador. Es divertida, fácil de usar y sirve tanto para educar como para entretener.
+</td>
+      </tr>
+      <tr>
+        <th>Actividades sugeridas</th>
+        <td>
+          <ul>
+            <li>Reconocimiento de Colores y Formas</li>
+            <li>Animales y sonidos</li>
+            <li>Números y conteo</li>
+          </ul>
+        </td>
+      </tr>
+      <tr>
+        <th>Ventajas</th>
+        <td>
+          <ul>
+            <li>Aprendizaje Activo</li>
+            <li>Interactividad y diversión</li>
+            <li>Facilidad de uso</li>
+          </ul>
+        </td>
+      </tr>
+      <tr>
+        <th>Limitaciones</th>
+        <td>
+          <ul>
+            <li>Dependencia de internet</li>
+            <li>Restricciones de la versión gratuita</li>
+            <li>Compatibilidad con dispositivos</li>
+          </ul>
+        </td>
+      </tr>
+      <tr>
+        <th>Link del recurso</th>
+        <td>
+        <a class="button" href="https://kahoot.it/" target="_blank">
+          Haz clic aquí para ir a Kahoot!
+        </a>
+      </td>
+      </tr>
+      <tr>
+        <th>Link del video tutorial</th>
+        <td><a class="button" href="https://www.youtube.com/watch?v=hxqcO0ihtkA" target="_blank">Haz clic aquí para ver el video tutorial</a></td>
+      </tr>
+      <tr>
+        <th>Instrucciones de aplicación</th>
+        <td>
+          <ol>
+            <li>Ingresa a kahoot y crea una cuenta o inicia sesión.</li>
+            <li>Haz clic en el botón “Crear” y selecciona el tipo de actividad.</li>
+            <li>Añade tus preguntas, respuestas, imágenes o videos. Marca la opción correcta.</li>
+            <li>Configura el tiempo de respuesta, puntos y diseño.</li>
+            <li>Guarda tu Kahoot y elige si lo usarás en vivo o lo asignarás como tarea</li>
+          </ol>
+        </td>
+      </tr>
+    </table>
+  </section>
+
+    <section>
+    <h2> Edublogs</h2>
+    <table>
+      <tr>
+        <th>Nombre del recurso</th>
+        <td>Edublogs</td>
+      </tr>
+      <tr>
+        <th>Código QR y logo</th>
+        <td><em><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_XDoaQAV8gBH8L71Hqf7nr2688YxFzU_YVQ&s" alt="edublogs"></em><img src="./assets/qrcode_edublogs.org.png" alt="qr"></td>
+      </tr>
+      <tr>
+        <th>Descripción detallada</th>
+        <td>Edublogs es una plataforma de blogs diseñada específicamente para el ámbito educativo, que permite a docentes, estudiantes e instituciones crear y gestionar blogs con fines pedagógicos. Su objetivo principal es fomentar el aprendizaje colaborativo, la reflexión académica y la comunicación entre miembros de la comunidad educativa.
+
+</td>
+      </tr>
+      <tr>
+        <th>Actividades sugeridas</th>
+        <td>
+          <ul>
+            <li>Mi primer dibujo digital</li>
+            <li>Historias con imágenes</li>
+            <li>Reconociendo colores y formas</li>
+          </ul>
+        </td>
+      </tr>
+      <tr>
+        <th>Ventajas</th>
+        <td>
+          <ul>
+            <li>Fomentan el aprendizaje colaborativo</li>
+            <li>Desarrollan habilidades digitales</li>
+            <li>Estimulan la creatividad</li>
+          </ul>
+        </td>
+      </tr>
+      <tr>
+        <th>Limitaciones</th>
+        <td>
+          <ul>
+            <li>Dependencia de internet</li>
+            <li>Capacidad de almacenamiento</li>
+            <li>Diseño limitado</li>
+          </ul>
+        </td>
+      </tr>
+      <tr>
+        <th>Link del recurso</th>
+        <td>
+        <a class="button" href="https://edublogs.org/" target="_blank">
+          Haz clic aquí para ir a Edublogs
+        </a>
+      </td>
+      </tr>
+      <tr>
+        <th>Link del video tutorial</th>
+        <td><a class="button" href="https://www.youtube.com/watch?v=MkTFMUuLJNo" target="_blank">Haz clic aquí para ver el video tutorial</a></td>
+      </tr>
+      <tr>
+        <th>Instrucciones de aplicación</th>
+        <td>
+          <ol>
+            <li>Ingresa a edublogs y crea una cuenta o inicia sesión.</li>
+            <li>Elige un nombre de usuario y dirección para tu blog, por ejemplo: mi-clase.edublogs.org.</li>
+            <li>Accede al panel de control (Dashboard) para gestionar tu contenido.</li>
+            <li>Publica tu primera entrada desde la sección “Posts > Add New”.</li>
+            <li>Crea páginas fijas como “Acerca de” o “Contacto” desde “Pages > Add New”</li>
+            <li>Personaliza el diseño de tu blog desde “Appearance > Customize”</li>
+            <li>Comparte el enlace de tu blog con tus estudiantes y familias.</li>
+          </ol>
+        </td>
+      </tr>
+    </table>
+  </section>
+
+    <section>
+    <h2>Genially</h2>
+    <table>
+      <tr>
+        <th>Nombre del recurso</th>
+        <td>Genially</td>
+      </tr>
+      <tr>
+        <th>Código QR y logo</th>
+        <td><em><img src="https://upload.wikimedia.org/wikipedia/commons/8/85/Genially_%282023%29_logotipo.png" alt="genially"><img src="./assets/qrcode_genially.com.png" alt="qr"></em></td>
+      </tr>
+      <tr>
+        <th>Descripción detallada</th>
+        <td>Genially es una plataforma en línea que permite crear contenido visual e interactivo de forma sencilla y atractiva. Su principal objetivo es transformar materiales estáticos en experiencias dinámicas, ideales para educación, marketing, formación corporativa y comunicación digital.</td>
+      </tr>
+      <tr>
+        <th>Actividades sugeridas</th>
+        <td>
+          <ul>
+            <li>Identificación de emociones</li>
+            <li>Historias interactivas</li>
+            <li>Galería de arte infantil</li>
+          </ul>
+        </td>
+      </tr>
+      <tr>
+        <th>Ventajas</th>
+        <td>
+          <ul>
+            <li>Facilidad de uso</li>
+            <li>Variedad de plantillas</li>
+            <li>Interactividad</li>
+          </ul>
+        </td>
+      </tr>
+      <tr>
+        <th>Limitaciones</th>
+        <td>
+          <ul>
+            <li>Rendimiento en dispositivos antiguos</li>
+            <li>Requiere conexión a internet</li>
+            <li>Diseño limitado</li>
+          </ul>
+        </td>
+      </tr>
+      <tr>
+        <th>Link del recurso</th>
+       <td>
+        <a class="button" href="https://edublogs.org/" target="_blank">
+          Haz clic aquí para ir a Genially
+        </a>
+      </td>
+      </tr>
+      <tr>
+        <th>Link del video tutorial</th>
+         <td><a class="button" href="https://www.youtube.com/watch?v=ffzVQYsVGUY" target="_blank">Haz clic aquí para ver el video tutorial</a></td>
+      </tr>
+      <tr>
+        <th>Instrucciones de aplicación</th>
+        <td>
+          <ol>
+            <li>Crear una cuenta en Genially con tu correo de Google</li>
+            <li>Accede al panel de creación y elige una plantilla o lienzo en blanco según el tipo de contenido que deseas (presentación, juego, infografía, etc.).</li>
+            <li>Personaliza tu diseño.</li>
+            <li>Añade interactividad.</li>
+            <li>Agrega animaciones.</li>
+            <li>Inserta contenido externo.</li>
+            <li>Publica y comparte tu Genially mediante enlace o código QR.</li>
+          </ol>
+        </td>
+      </tr>
+    </table>
+  </section>
+
+    <section>
+    <h2>Educaplay</h2>
+    <table>
+      <tr>
+        <th>Nombre del recurso</th>
+        <td>Educaplay</td>
+      </tr>
+      <tr>
+        <th>Código QR y logo</th>
+        <td><em><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ43exaZAgOBc9yP-ostO14UQpDXXwW9c8YnA&s" alt="Educaplay"><img src="./assets/qrcode_es.educaplay.com.png" alt="qr"></em></td>
+      </tr>
+      <tr>
+        <th>Descripción detallada</th>
+        <td>Educaplay es una plataforma digital que permite crear actividades educativas multimedia de forma sencilla, atractiva e interactiva. Está pensada para docentes, estudiantes y profesionales de la educación que buscan dinamizar el aprendizaje mediante juegos y recursos visuales.</td>
+      </tr>
+      <tr>
+        <th>Actividades sugeridas</th>
+        <td>
+          <ul>
+            <li>Sopa de letras sencilla</li>
+            <li>Adivinanzas con imágenes</li>
+            <li>Relacionar columnas</li>
+          </ul>
+        </td>
+      </tr>
+      <tr>
+        <th>Ventajas</th>
+        <td>
+          <ul>
+            <li>Interactividad</li>
+            <li>Facilidad de uso</li>
+            <li>- Accesibilidad multiplataforma</li>
+          </ul>
+        </td>
+      </tr>
+      <tr>
+        <th>Limitaciones</th>
+        <td>
+          <ul>
+            <li>Descarga limitada</li>
+            <li>Requiere conexión a internet</li>
+            <li>Rendimiento variable</li>
+          </ul>
+        </td>
+      </tr>
+      <tr>
+        <th>Link del recurso</th>
+        <td>
+        <a class="button" href="https://es.educaplay.com/" target="_blank">
+          Haz clic aquí para ir a Educaplay
+        </a>
+      </td>
+      </tr>
+      <tr>
+        <th>Link del video tutorial</th>
+        <td><a class="button" href="https://www.youtube.com/watch?v=ZRkZ9-DPaj0" target="_blank">Haz clic aquí para ver el video tutorial</a></td>
+      </tr>
+      <tr>
+        <th>Instrucciones de aplicación</th>
+        <td>
+          <ol>
+            <li>Crear una cuenta gratuita en educaplay</li>
+            <li>Una vez dentro, selecciona “Crear actividad” y elige el tipo que deseas (sopa de letras, crucigrama, adivinanza, etc.).</li>
+            <li>Completa los datos básicos: título, idioma, curso, asignatura y área de conocimiento.</li>
+            <li>Configura la actividad</li>
+            <li>Publica y comparte mediante enlace o QR</li>
+          </ol>
+        </td>
+      </tr>
+    </table>
+  </section>
+
+    <section>
+    <h2>Voki</h2>
+    <table>
+      <tr>
+        <th>Nombre del recurso</th>
+        <td>Voki</td>
+      </tr>
+      <tr>
+        <th>Código QR y logo</th>
+        <td><em><img src="https://images.sftcdn.net/images/t_app-icon-m/p/ea47692c-d34c-463e-ab82-c7f8ae42129e/3583457526/voki-for-education-logo" alt="Voki"><img src="./assets/qrcode_l-www.voki.com.png" alt=""></em></td>
+      </tr>
+      <tr>
+        <th>Descripción detallada</th>
+        <td>Voki es una herramienta en línea que permite a los usuarios crear avatares animados que hablan. Es especialmente útil en el ámbito educativo, ya que facilita la creación de presentaciones interactivas y atractivas para estudiantes.</td>
+      </tr>
+      <tr>
+        <th>Actividades sugeridas</th>
+        <td>
+          <ul>
+            <li>Presentación del personaje</li>
+            <li>Cuentos hablados</li>
+            <li>Aprendiendo las vocales</li>
+          </ul>
+        </td>
+      </tr>
+      <tr>
+        <th>Ventajas</th>
+        <td>
+          <ul>
+            <li>Potencia la creatividad</li>
+            <li>Desarrolla competencias lingüísticas</li>
+            <li>Presentación multisensorial</li>
+          </ul>
+        </td>
+      </tr>
+      <tr>
+        <th>Limitaciones</th>
+        <td>
+          <ul>
+            <li>Requiere conexión a internet</li>
+            <li>Compatibilidad limitada</li>
+            <li>Duración de grabación restringida</li>
+          </ul>
+        </td>
+      </tr>
+      <tr>
+        <th>Link del recurso</th>
+       <td>
+        <a class="button" href="https://l-www.voki.com/" target="_blank">
+          Haz clic aquí para ir a Voki
+        </a>
+      </td>
+      </tr>
+      <tr>
+        <th>Link del video tutorial</th>
+        <td><a class="button" href="https://www.youtube.com/watch?v=Nu9MaQM3FYE" target="_blank">Haz clic aquí para ver el video tutorial</a></td>
+      </tr>
+      <tr>
+        <th>Instrucciones de aplicación</th>
+        <td>
+          <ol>
+            <li>Crear una cuenta gratuita en Voki</li>
+            <li>Personaliza tu personaje</li>
+            <li>Agrega voz al avatar</li>
+            <li>Guarda y publica</li>
+          </ol>
+        </td>
+      </tr>
+    </table>
+  </section>
+    <footer>
+      <p>© Luisa Marleny Fuentes Velázquez 2025. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
